@@ -1,0 +1,100 @@
+%btn {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: white;
+  background: transparent;
+  padding: 1.5rem 3rem;
+  border: 2px solid white;
+  width: auto;
+  border-radius: 4rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+
+  @media (max-width: $screen-xs){
+    width: 100%;
+  }
+
+}
+
+.btn-prime {
+  @extend %btn;
+  color: $prime;
+  border: 2px solid $prime;
+
+  &:hover {
+    background: $primeShade;
+    color: white;
+  }
+}
+
+.btn-second {
+  @extend %btn;
+  background: $second;
+  border: 2px solid $second;
+
+  &:hover {
+    background: $secondShade;
+  }
+}
+
+.btn-outline {
+  @extend %btn;
+
+  &:hover {
+    background: #fff;
+    color: #000;
+  }
+}
+
+.btn-small {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+}
+
+.btn-large {
+  padding: 1.9rem 5.1rem;
+}
+
+.btn-up{
+  @extend %btn;
+  position: absolute;
+  bottom: 5rem;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  color: $second;
+
+  &:hover {
+    background: $secondShade;
+    color: white;
+  }
+  @media (max-width: $screen-md) {
+    padding: 1rem 2rem;
+    position: absolute;
+    text-align: left;
+  }
+}
+
+.btn-cv{
+  @extend %btn;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  color: $second;
+  border: none;
+  text-decoration: underline;
+
+  &:hover {
+    background: $secondShade;
+    color: white;
+  }
+  @media (max-width: $screen-md) {
+    border: none;
+    text-decoration: underline;
+
+  }
+
+  }
+

@@ -1,0 +1,29 @@
+.modal-content .modal-cv{
+  text-align: center;
+}
+
+#myCv{
+  background: transparent;
+  text-align: left;
+  border: inherit;
+  box-shadow: none;
+
+  @media (max-width: $screen-xs){
+    padding-left: $containerHorIndentMobile;
+    padding-right: $containerHorIndentMobile;
+  }
+
+}
+
+embed{
+  text-align: center;
+  padding: 0 6rem 2rem 0;
+  width: 100rem;
+  height: 100rem;
+
+  @media (max-width: $screen-xs){
+    left: -25rem;
+    width: 50rem;
+    height: 50rem;
+  }
+}
