@@ -1,61 +1,542 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Portfilo Web App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <title>Github Finder</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://bootswatch.com/4/simplex/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="./css/pages/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
-
-
 <body>
 
-<nav class="navbar navbar-inverse">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Github Finder</a>
+<section class="hero bg-black">
+    <header class="wrap cf">
+        <div class="logo-name pull-left">Yurii Andriiets</div>
+
+        <div class="hamburger pull-right _hamburger">
+            <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-
+        <nav class="hero-nav pull-right _nav">
+            <ul class="list-unstyled header-ref">
+                <li class="hero-nav-item"><a href="#home"     class="header-ref"> <span class="white">home</span></a></li>
+                <li class="hero-nav-item"><a href="#services" class="header-ref"> <span class="white">services</span></a></li>
+                <li class="hero-nav-item"><a href="#about"    class="header-ref"> <span class="white">about</span></a></li>
+                <li class="hero-nav-item"><a href="#work"     class="header-ref"> <span class="white">my work</span></a></li>
+                <li class="hero-nav-item"><a href="#blog"     class="header-ref"> <span class="white">blog</span></a></li>
+                <li class="hero-nav-item"><a href="#contact"  class="header-ref"> <span class="white">contact</span></a></li>
+                <div class="btn-cv" data-toggle="modal" data-target="#myCv"> CV</div>
+                <!--<input id = "#myCv" class = "btn " type="button" value = "CV">-->
             </ul>
-        </div><!--/.nav-collapse -->
+        </nav>
+    </header>
+
+    <div class="section wrap text-center">
+        <p class="prime hero-subtitle">web designer and developer</p>
+        <h1 class="hero-title">
+            My Name Is Yurii.<br>
+            I Design Beautiful Websites.
+        </h1>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                <div class="text-right mobile-text-center">
+                    <div class="btn-outline btn-large">learn more</div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="text-left mobile-text-center">
+                    <div class="btn-second btn-large" data-toggle="modal" data-target="#contactMe">contact me</div>
+                </div>
+            </div>
+        </div>
+        <div class="pull-right">
+             <div class="fixed mb-10 ">
+                <div> <a href="" name="home" class=" btn-up link"> up </a></div>
+             </div >
+        </div>
     </div>
-</nav>
+</section>
 
-<div class="container">
+<!----------------------------------------------------------------------------------------------------------------->
+<section class="section service-section bg-white text-center">
+    <div class="wrap">
+        <a href="" name="services"></a>
+        <h2 class="h2 mb-2">
+            My Services
+        </h2>
+        <div class="h5 prime mb-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="service-wrap text-center mb-5">
+                    <div class="logo-html circle rel">
+                        <div class="abs">
+                             <img src="img/bg/html_logo.png" class="logo-css" alt="">
+                        </div>
+                    </div>
+                    <div class="h2 mb-4"> HTML 5 </div>
+                    <div class="service-description mb-4">
+                        Suspendisse et quam id mauris pulvinar elementum. Donec blandit ante semper ligula feugiat, et pharetra diam lobortis.”
+                    </div>
+                    <div class="btn-prime center">learn more</div>
+                </div>
+            </div>
 
-    <div class="searchContainer">
-        <h1>Search Github Users</h1>
-        <p class="lead">Enter a username to fetch a users profile info and repos</p>
-        <input type="text" id="searchUser" class="form-control" placeholder="Github Username...">
+            <div class="col-md-4">
+                <div class="service-wrap text-center mb-5">
+                    <div class="logo-html circle rel">
+                        <div class="abs">
+                             <img src="img/bg/css_logo.png" class="logo-css" alt="">
+                        </div>
+                    </div>
+                    <div class="h2 mb-4"> CSS 3 </div>
+                    <div class="service-description  mb-4">
+                        Suspendisse et quam id mauris pulvinar elementum. Donec blandit ante semper ligula feugiat, et pharetra diam lobortis.”
+                    </div>
+                    <div class="btn-prime center">learn more</div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-wrap text-center">
+                    <div class="logo-html circle rel">
+                        <div class="abs">
+                             <img src="img/bg/js_logo.png" class="logo-css" alt="">
+                        </div>
+                    </div>
+                    <div class="h2 mb-4">  JavaScript  </div>
+                    <div class="service-description  mb-4">
+                        Suspendisse et quam id mauris pulvinar elementum. Donec blandit ante semper ligula feugiat, et pharetra diam lobortis.”
+                    </div>
+                    <div class="btn-prime center">learn more</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <br>
-    <div id="profile"></div>
+</section>
 
-</div><!-- /.container -->
+<!------------------------------------------------------------->
+<section class="section service-section bg-gray text-center">
+    <div class="wrap">
+        <a href="" name="about"></a>
+        <h2 class="h2 mb-2">
+            About me
+        </h2>
+        <div class="h5 prime mb-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class=" text-center">
+                    <div>
+                        <img src="img/bg/john.jpg" class="circle" alt="">
+                    </div>
+                    <div class="h2 mb-2"> John Freelancer </div>
+                    <div class="h6 mb-4"> Graphic Designer / Web Developer </div>
+                    <div> <a href="">@JOHNFREELANCER</a> </div>
+                 </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-wrap text-center">
+                    <div class="text-left mb-4">
+                        <p class="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <br>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <br>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-wrap text-center">
+                    <div class="text-left mb-4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <br>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <br>
+                        <a href="">Read more about me...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------------------------------------------------------>
+<section class="section service-section bg-white text-center">
+    <div class="wrap">
+        <a href="" name="work"></a>
+        <h2 class="h2 mb-2 ">
+            My Work
+        </h2>
+        <div class="h5 prime mb-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <div class="mb-5">
+            <div class="mb-3">
+                 <div class="row">
+                     <div class="col-xs-12 col-sm-6 col-md-3">
+                         <div class="service-wrap text-center mb-1">
+                             <div class="squre1 ">
+                                 <!--<div class="mb-2 white">-->
+                                 <!--<h4>Project name</h4>-->
+                                 <!--</div>-->
+                                 <!--<div class="btn-second"> See project </div>-->
+                             </div>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="service-wrap text-center mb-1">
+                            <div class="squre2"></div>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="service-wrap text-center mb-1">
+                           <div class="squre3"></div>
+                        </div>
+                     </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                             <div class="service-wrap text-center mb-1">
+                                 <div class="squre4"></div>
+                             </div>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                     <div class="service-wrap text-center mb-1">
+                        <div class="squre5"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                     <div class="service-wrap text-center mb-1">
+                         <div class="squre6"></div>
+                     </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="service-wrap text-center mb-1">
+                            <div class="squre7"></div>
+                     </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="service-wrap text-center mb-1">
+                        <div class="squre8"></div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="mb-10">
+            <div class="btn-prime"> see more project </div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------------------------------------->
+<section class="section bg-gray text-center">
+    <div class="wrap">
+        <a href="" name="blog"></a>
+        <h2 class="h2 mb-2">
+             What My Clients Say
+        </h2>
+        <div class="h5 prime mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <div class=" third mb-5">
+            <blockquote>
+                Lorem Ipsum Dolor sit amet. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                <br>
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
+            </blockquote>
+        </div>
+
+        <!--Carousel-->
+        <div id="carousel-example-generic" data-interval="1000" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active bg-prime"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1" class="bg-prime" ></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2" class="bg-prime"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="service-wrap text-right mobile-text-center">
+                                <div>
+                                    <img src="img/bg/john.jpg"  class="circleSmall" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-wrap">
+                                <div class="text-left mb-4  mobile-text-center">
+                                    <div class="h3 mb-1">
+                                        John Freelancer
+                                    </div>
+                                    <div class="h6">
+                                        CEO at Company
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class=" text-right mobile-text-center">
+                                <div>
+                                    <img src="img/bg/john.jpg"  class="circleSmall bg-second" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-wrap">
+                                <div class="text-left mb-4  mobile-text-center">
+                                    <div class="h3 mb-1 bg-second">
+                                        John Freelancer123214235243535645764
+                                    </div>
+                                    <div class="h6">
+                                        CEO at Company245647465u746657546
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="service-wrap text-right mobile-text-center">
+                                <div>
+                                    <img src="img/bg/john.jpg"  class="circleSmall bg-prime" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-wrap">
+                                <div class="text-left mb-4  mobile-text-center">
+                                    <div class="h3 mb-1 bg-prime">
+                                        John Freelancer_____FGNGHMJFNDBF
+                                    </div>
+                                    <div class="h6">
+                                        CEO at Company_GFNDFMH,GJK,MNBGFV245
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left"  href="#carousel-example-generic"  data-slide="prev"></a>
+                <a class="right" href="#carousel-example-generic"  data-slide="next"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="" name="contact"></a>
+
+<!--------------------------------------------------------------->
+<section class="section text-center bg-white">
+    <div class="wrap">
+        <h2 class="h1 mb-2">
+                Get in Touch
+        </h2>
+        <div class="h5 third mb-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <div class="text-center mobile-text-center">
+            <div class="btn-second btn-large" data-toggle="modal" data-target="#contactMe">contact me</div>
+        </div>
+    </div>
+</section>
+
+<!--------------------------------------------------------------->
+<footer class="footer bg-black center">
+    <div class="wrap ">
+            <div class="mb-5 third">
+                <h2 class="h4">
+                     © Copyright 2017 Yurii`s Website. All rights reserved.
+                 </h2>
+            </div>
+        <div class="mb-5 mobile-text-center">
+            <div class="rel icon circle inline-block">
+                <div class="abs ">
+                    <a href="https://www.facebook.com/yurii.anatolievich.5" class="third"> <i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="rel icon circle inline-block">
+                <div class="abs">
+                    <a href="" class="third"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="rel icon circle inline-block">
+                <div class="abs">
+                    <a href="" class="third"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="rel icon circle inline-block">
+                <div class="abs">
+                    <a href="" class="third"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--&lt;!&ndash;buttons examples&ndash;&gt;-->
+<!--<div class="section ">-->
+    <!--<div class="wrap">-->
+        <!--<div class="btn-prime">-->
+            <!--learn more-->
+        <!--</div>-->
+        <!--<div class="btn-second">-->
+            <!--learn more-->
+        <!--</div>-->
+        <!--<div class="btn-outline">-->
+            <!--learn more-->
+        <!--</div>-->
+
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="section bg-black">-->
+    <!--<div class="wrap">-->
+        <!--<div class="btn-prime btn-large">-->
+            <!--button-->
+        <!--</div>-->
+        <!--<div class="btn-second btn-large">-->
+            <!--button-->
+        <!--</div>-->
+        <!--<div class="btn-outline btn-large">-->
+            <!--button-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="section bg-black">-->
+    <!--<div class="wrap">-->
+        <!--<div class="row">-->
+            <!--<div class="col-xs-6 col-sm-3 col-md-2">-->
+                <!--<div class="btn-prime btn-small">-->
+                    <!--button-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-xs-6 col-sm-3 col-md-2">-->
+                <!--<div class="btn-second btn-small">-->
+                    <!--button-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-xs-6 col-sm-3 col-md-2">-->
+                <!--<div class="btn-outline btn-small">-->
+                    <!--button-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-xs-6 col-sm-3 col-md-2">-->
+                <!--<div class="btn-prime btn-small">-->
+                    <!--button-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-xs-6 col-sm-3 col-md-2">-->
+                <!--<div class="btn-second btn-small">-->
+                    <!--button-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-xs-6 col-sm-3 col-md-2">-->
+                <!--<div class="btn-outline btn-small   ">-->
+                    <!--button-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<!--Modal window "Contact Me"-->
+<div id="contactMe" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close1" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h1 class="modal-title">Contact Me</h1>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="text-contact text-left">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis ullamcorper.</p>
+                            <br>
+                            <p class="text2">Phasellus tempor ac lorem non suscipit. Integer iaculis vestib ulum accumsan. Pellen tesque tristique hendrerit diam, ac faucibus magna porta sed.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <form class="form">
+                            <div class="form-group ">
+                                <label for="exampleInputName1"></label>
+                                <input type="text" class="form-control" id="exampleInputName1" placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"></label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your email address">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Your message"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="modal-footer">
+                        <button type="button" class="btn-second center" data-dismiss="modal">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--Modal window "My CV"-->
+<div id="myCv" class="modal fade">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content ">
+            <div class="modal-header text-right">
+                <button type="button" class="close close1 " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h1 class="modal-title pull-left "> <span class="second">C</span> <span class="prime">V</span></h1>
+            </div>
+            <div class="modal-body ">
+                <div class="modal-cv">
+                    <embed src="CV_Yurii_Andriiets_FED.pdf"></embed>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="modal-footer">
+                            <button type="button" class="btn-second pull-right" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
 <script
-        src="https://code.jquery.com/jquery-3.2.1.js"
-        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+<script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
 
-<script src="js/main.js"></script>
+<script src="./js/build.js"></script>
 </body>
 </html>
